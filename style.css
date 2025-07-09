@@ -209,3 +209,16 @@ body {
   position: relative;
   z-index: 1;
 }
+
+/* Add a subtle gradient overlay to enhance text visibility */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(24, 24, 27, 0.8) 0%,
+    rgba(39, 39, 42, 0.8) 100%
+  );
+  z-index: 1;
+}
